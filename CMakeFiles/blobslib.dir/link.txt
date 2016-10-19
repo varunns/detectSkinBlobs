@@ -1,0 +1,2 @@
+/usr/bin/ar cr libblobslib.a  CMakeFiles/blobslib.dir/cvBlobsLib/src/BlobContour.cpp.o CMakeFiles/blobslib.dir/cvBlobsLib/src/blob.cpp.o CMakeFiles/blobslib.dir/cvBlobsLib/src/BlobResult.cpp.o CMakeFiles/blobslib.dir/cvBlobsLib/src/ComponentLabeling.cpp.o CMakeFiles/blobslib.dir/cvBlobsLib/src/BlobOperators.cpp.o
+/usr/bin/ranlib libblobslib.a
