@@ -143,89 +143,33 @@ cout << "cannot open camera";
 
 
 		}
-		if (SHOW_EXTENDED_COLOR_IMAGES)
+/*		if (SHOW_EXTENDED_COLOR_IMAGES)
 		{
 
-				vector<cv::Mat> planesHSV2(3);
+			vector<cv::Mat> planesHSV2(3);
 			cv::split(imageHSV, planesHSV2);		
-	/*		cvSet(planeS1, CV_RGB(255,255,255));
-			cvSet(planeV1, CV_RGB(255,255,255));*/	
 			planesHSV2[1].setTo(cv::Scalar(255,255,255));
-		//	planesHSV1[2].setTo(cv::Scalar(255,255,255));
-	/*		IplImage* imageHSV1 = cvCreateImage( cvGetSize(imageBGR), 8, 3);	// Full HSV color image.
-			IplImage* imageBGR1 = cvCreateImage( cvGetSize(imageBGR), 8, 3);	// Full RGB color image.*/
 			cv::Mat imageHSV2 = cv::Mat(imageBGR.size(),8 , 3);
 			cv::Mat imageBGR2 = cv::Mat(imageBGR.size(),8 , 3);
-	/* 		cvCvtPlaneToPix( planeH1, planeS1, planeV1, 0, imageHSV1 );	// combine the separate color components.
-			cvCvtColor(imageHSV1, imageBGR1, CV_HSV2BGR);				// Convert from a BGR to an HSV image. */
 			cv::merge(planesHSV2, imageHSV2);
 			cvtColor(imageHSV2, imageBGR2, CV_HSV2BGR);
 			namedWindow("sat max", CV_WINDOW_AUTOSIZE);
 			imshow("sat max", imageBGR2);
 			waitKey(0);
-
-
-		/*	// Set the Saturation to max, so we can see the saturation & color of every pixel.
-			IplImage* planeH2 = cvCreateImage( cvGetSize(imageBGR), 8, 1);	// Hue component.
-			IplImage* planeS2 = cvCreateImage( cvGetSize(imageBGR), 8, 1);	// Saturation component.
-			IplImage* planeV2 = cvCreateImage( cvGetSize(imageBGR), 8, 1);	// Brightness component.
-			cvCvtPixToPlane(imageHSV, planeH2, planeS2, planeV2, 0);	// Extract the 3 color components.
-			cvSet(planeS2, CV_RGB(255,255,255));
-			//cvSet(planeV2, CV_RGB(255,255,255));
-			IplImage* imageHSV2 = cvCreateImage( cvGetSize(imageBGR), 8, 3);	// Full HSV color image.
-			IplImage* imageBGR2 = cvCreateImage( cvGetSize(imageBGR), 8, 3);	// Full RGB color image.
-			cvCvtPlaneToPix( planeH2, planeS2, planeV2, 0, imageHSV2 );	// combine the separate color components.
-			cvCvtColor(imageHSV2, imageBGR2, CV_HSV2BGR);				// Convert from a BGR to an HSV image.
-			cvNamedWindow("Saturation max", CV_WINDOW_AUTOSIZE);
-			cvShowImage("Saturation max", imageBGR2);
-			cvReleaseImage(&planeH2);
-			cvReleaseImage(&planeS2);
-			cvReleaseImage(&planeV2);
-			cvReleaseImage(&imageHSV2);
-			cvReleaseImage(&imageBGR2); */
-		}
-		if (SHOW_EXTENDED_COLOR_IMAGES)
+		}*/
+	/*	if (SHOW_EXTENDED_COLOR_IMAGES)
 		{
-						vector<cv::Mat> planesHSV3(3);
+			vector<cv::Mat> planesHSV3(3);
 			cv::split(imageHSV, planesHSV3);		
-	/*		cvSet(planeS1, CV_RGB(255,255,255));
-			cvSet(planeV1, CV_RGB(255,255,255));*/	
-	//planesHSV3[1].setTo(cv::Scalar(255,255,255));
-		planesHSV3[2].setTo(cv::Scalar(255,255,255));
-
-		//	planesHSV1[2].setTo(cv::Scalar(255,255,255));
-	/*		IplImage* imageHSV1 = cvCreateImage( cvGetSize(imageBGR), 8, 3);	// Full HSV color image.
-			IplImage* imageBGR1 = cvCreateImage( cvGetSize(imageBGR), 8, 3);	// Full RGB color image.*/
+			planesHSV3[2].setTo(cv::Scalar(255,255,255));
 			cv::Mat imageHSV3 = cv::Mat(imageBGR.size(),8 , 3);
 			cv::Mat imageBGR3 = cv::Mat(imageBGR.size(),8 , 3);
-	/* 		cvCvtPlaneToPix( planeH1, planeS1, planeV1, 0, imageHSV1 );	// combine the separate color components.
-			cvCvtColor(imageHSV1, imageBGR1, CV_HSV2BGR);				// Convert from a BGR to an HSV image. */
 			cv::merge(planesHSV3, imageHSV3);
 			cvtColor(imageHSV3, imageBGR3, CV_HSV2BGR);
 			namedWindow("bright max", CV_WINDOW_AUTOSIZE);
 			imshow("bright max", imageBGR3);
 			waitKey(0);
-
-
-			// Set the Brightness to max, so we can see the saturation & color of every pixel.
-		/*	IplImage* planeH3 = cvCreateImage( cvGetSize(imageBGR), 8, 1);	// Hue component.
-			IplImage* planeS3 = cvCreateImage( cvGetSize(imageBGR), 8, 1);	// Saturation component.
-			IplImage* planeV3 = cvCreateImage( cvGetSize(imageBGR), 8, 1);	// Brightness component.
-			cvCvtPixToPlane(imageHSV, planeH3, planeS3, planeV3, 0);	// Extract the 3 color components.
-			//cvSet(planeS3, CV_RGB(255,255,255));
-			cvSet(planeV3, CV_RGB(255,255,255));
-			IplImage* imageHSV3 = cvCreateImage( cvGetSize(imageBGR), 8, 3);	// Full HSV color image.
-			IplImage* imageBGR3 = cvCreateImage( cvGetSize(imageBGR), 8, 3);	// Full RGB color image.
-			cvCvtPlaneToPix( planeH3, planeS3, planeV3, 0, imageHSV3 );	// combine the separate color components.
-			cvCvtColor(imageHSV3, imageBGR3, CV_HSV2BGR);				// Convert from a BGR to an HSV image.
-			cvNamedWindow("Brightness max", CV_WINDOW_AUTOSIZE);
-			cvShowImage("Brightness max", imageBGR3);
-			cvReleaseImage(&planeH3);
-			cvReleaseImage(&planeS3);
-			cvReleaseImage(&planeV3);
-			cvReleaseImage(&imageHSV3);
-			cvReleaseImage(&imageBGR3);*/
-		}
+		}*/
 
 		// Show the input HSV channels
 		imshow("Input Hue", planesHSV[0]);
@@ -318,7 +262,7 @@ cout << "cannot open camera";
 		 	 const Point *pts = (const cv::Point*) Mat(hull).data;
 		 	 int npts = hull.size();
 		 	 polylines(imageBGR, &pts, &npts, 1, true, Scalar(0,0,255));
-		 	 
+
 	     namedWindow("contour image", CV_WINDOW_AUTOSIZE);
 	     imshow("contour image", imageBGR);
 	    }
