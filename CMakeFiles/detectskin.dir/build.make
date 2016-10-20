@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/varun/c++/detectSkinBlobs
+CMAKE_SOURCE_DIR = /home/v.nidamarthy/C++/hand_detection/detectSkinBlobs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/varun/c++/detectSkinBlobs
+CMAKE_BINARY_DIR = /home/v.nidamarthy/C++/hand_detection/detectSkinBlobs
 
 # Include any dependencies generated for this target.
 include CMakeFiles/detectskin.dir/depend.make
@@ -51,17 +51,17 @@ include CMakeFiles/detectskin.dir/flags.make
 
 CMakeFiles/detectskin.dir/DetectSkinBlobs.cpp.o: CMakeFiles/detectskin.dir/flags.make
 CMakeFiles/detectskin.dir/DetectSkinBlobs.cpp.o: DetectSkinBlobs.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/varun/c++/detectSkinBlobs/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/v.nidamarthy/C++/hand_detection/detectSkinBlobs/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/detectskin.dir/DetectSkinBlobs.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/detectskin.dir/DetectSkinBlobs.cpp.o -c /home/varun/c++/detectSkinBlobs/DetectSkinBlobs.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/detectskin.dir/DetectSkinBlobs.cpp.o -c /home/v.nidamarthy/C++/hand_detection/detectSkinBlobs/DetectSkinBlobs.cpp
 
 CMakeFiles/detectskin.dir/DetectSkinBlobs.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/detectskin.dir/DetectSkinBlobs.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/varun/c++/detectSkinBlobs/DetectSkinBlobs.cpp > CMakeFiles/detectskin.dir/DetectSkinBlobs.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/v.nidamarthy/C++/hand_detection/detectSkinBlobs/DetectSkinBlobs.cpp > CMakeFiles/detectskin.dir/DetectSkinBlobs.cpp.i
 
 CMakeFiles/detectskin.dir/DetectSkinBlobs.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/detectskin.dir/DetectSkinBlobs.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/varun/c++/detectSkinBlobs/DetectSkinBlobs.cpp -o CMakeFiles/detectskin.dir/DetectSkinBlobs.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/v.nidamarthy/C++/hand_detection/detectSkinBlobs/DetectSkinBlobs.cpp -o CMakeFiles/detectskin.dir/DetectSkinBlobs.cpp.s
 
 CMakeFiles/detectskin.dir/DetectSkinBlobs.cpp.o.requires:
 .PHONY : CMakeFiles/detectskin.dir/DetectSkinBlobs.cpp.o.requires
@@ -102,6 +102,7 @@ detectskin: /usr/local/lib/libopencv_face.so.3.1.0
 detectskin: /usr/local/lib/libopencv_dpm.so.3.1.0
 detectskin: /usr/local/lib/libopencv_dnn.so.3.1.0
 detectskin: /usr/local/lib/libopencv_datasets.so.3.1.0
+detectskin: /usr/local/lib/libopencv_cvv.so.3.1.0
 detectskin: /usr/local/lib/libopencv_ccalib.so.3.1.0
 detectskin: /usr/local/lib/libopencv_bioinspired.so.3.1.0
 detectskin: /usr/local/lib/libopencv_bgsegm.so.3.1.0
@@ -154,6 +155,6 @@ CMakeFiles/detectskin.dir/clean:
 .PHONY : CMakeFiles/detectskin.dir/clean
 
 CMakeFiles/detectskin.dir/depend:
-	cd /home/varun/c++/detectSkinBlobs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/varun/c++/detectSkinBlobs /home/varun/c++/detectSkinBlobs /home/varun/c++/detectSkinBlobs /home/varun/c++/detectSkinBlobs /home/varun/c++/detectSkinBlobs/CMakeFiles/detectskin.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/v.nidamarthy/C++/hand_detection/detectSkinBlobs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/v.nidamarthy/C++/hand_detection/detectSkinBlobs /home/v.nidamarthy/C++/hand_detection/detectSkinBlobs /home/v.nidamarthy/C++/hand_detection/detectSkinBlobs /home/v.nidamarthy/C++/hand_detection/detectSkinBlobs /home/v.nidamarthy/C++/hand_detection/detectSkinBlobs/CMakeFiles/detectskin.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/detectskin.dir/depend
 

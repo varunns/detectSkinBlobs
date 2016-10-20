@@ -1,4 +1,4 @@
-# Install script for directory: /home/varun/c++/detectSkinBlobs
+# Install script for directory: /home/v.nidamarthy/C++/hand_detection/detectSkinBlobs
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,7 +38,7 @@ ELSE(CMAKE_INSTALL_COMPONENT)
   SET(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 ENDIF(CMAKE_INSTALL_COMPONENT)
 
-FILE(WRITE "/home/varun/c++/detectSkinBlobs/${CMAKE_INSTALL_MANIFEST}" "")
+FILE(WRITE "/home/v.nidamarthy/C++/hand_detection/detectSkinBlobs/${CMAKE_INSTALL_MANIFEST}" "")
 FOREACH(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  FILE(APPEND "/home/varun/c++/detectSkinBlobs/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  FILE(APPEND "/home/v.nidamarthy/C++/hand_detection/detectSkinBlobs/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 ENDFOREACH(file)

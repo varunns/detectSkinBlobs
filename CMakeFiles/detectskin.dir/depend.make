@@ -55,6 +55,7 @@ CMakeFiles/detectskin.dir/DetectSkinBlobs.cpp.o: /usr/local/include/opencv2/objd
 CMakeFiles/detectskin.dir/DetectSkinBlobs.cpp.o: /usr/local/include/opencv2/objdetect/detection_based_tracker.hpp
 CMakeFiles/detectskin.dir/DetectSkinBlobs.cpp.o: /usr/local/include/opencv2/objdetect/objdetect_c.h
 CMakeFiles/detectskin.dir/DetectSkinBlobs.cpp.o: /usr/local/include/opencv2/opencv.hpp
+CMakeFiles/detectskin.dir/DetectSkinBlobs.cpp.o: /usr/local/include/opencv2/opencv_modules.hpp
 CMakeFiles/detectskin.dir/DetectSkinBlobs.cpp.o: /usr/local/include/opencv2/photo.hpp
 CMakeFiles/detectskin.dir/DetectSkinBlobs.cpp.o: /usr/local/include/opencv2/photo/photo_c.h
 CMakeFiles/detectskin.dir/DetectSkinBlobs.cpp.o: /usr/local/include/opencv2/video.hpp

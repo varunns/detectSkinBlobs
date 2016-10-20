@@ -6,33 +6,33 @@
 
 #IncludeRegexTransform: 
 
-/home/varun/c++/detectSkinBlobs/cvBlobsLib/src/BlobContour.cpp
+/home/v.nidamarthy/C++/hand_detection/detectSkinBlobs/cvBlobsLib/src/BlobContour.cpp
 BlobContour.h
-/home/varun/c++/detectSkinBlobs/cvBlobsLib/src/BlobContour.h
+/home/v.nidamarthy/C++/hand_detection/detectSkinBlobs/cvBlobsLib/src/BlobContour.h
 opencv/cxcore.h
-/home/varun/c++/detectSkinBlobs/cvBlobsLib/src/opencv/cxcore.h
+/home/v.nidamarthy/C++/hand_detection/detectSkinBlobs/cvBlobsLib/src/opencv/cxcore.h
 
-/home/varun/c++/detectSkinBlobs/cvBlobsLib/src/BlobContour.h
+/home/v.nidamarthy/C++/hand_detection/detectSkinBlobs/cvBlobsLib/src/BlobContour.h
 list
-/home/varun/c++/detectSkinBlobs/cvBlobsLib/src/list
+/home/v.nidamarthy/C++/hand_detection/detectSkinBlobs/cvBlobsLib/src/list
 opencv/cv.h
-/home/varun/c++/detectSkinBlobs/cvBlobsLib/src/opencv/cv.h
+/home/v.nidamarthy/C++/hand_detection/detectSkinBlobs/cvBlobsLib/src/opencv/cv.h
 opencv2/core/types_c.h
-/home/varun/c++/detectSkinBlobs/cvBlobsLib/src/opencv2/core/types_c.h
+/home/v.nidamarthy/C++/hand_detection/detectSkinBlobs/cvBlobsLib/src/opencv2/core/types_c.h
 
-/home/varun/c++/detectSkinBlobs/cvBlobsLib/src/BlobLibraryConfiguration.h
+/home/v.nidamarthy/C++/hand_detection/detectSkinBlobs/cvBlobsLib/src/BlobLibraryConfiguration.h
 
-/home/varun/c++/detectSkinBlobs/cvBlobsLib/src/BlobOperators.cpp
+/home/v.nidamarthy/C++/hand_detection/detectSkinBlobs/cvBlobsLib/src/BlobOperators.cpp
 limits.h
 -
 BlobOperators.h
-/home/varun/c++/detectSkinBlobs/cvBlobsLib/src/BlobOperators.h
+/home/v.nidamarthy/C++/hand_detection/detectSkinBlobs/cvBlobsLib/src/BlobOperators.h
 
-/home/varun/c++/detectSkinBlobs/cvBlobsLib/src/BlobOperators.h
+/home/v.nidamarthy/C++/hand_detection/detectSkinBlobs/cvBlobsLib/src/BlobOperators.h
 blob.h
-/home/varun/c++/detectSkinBlobs/cvBlobsLib/src/blob.h
+/home/v.nidamarthy/C++/hand_detection/detectSkinBlobs/cvBlobsLib/src/blob.h
 
-/home/varun/c++/detectSkinBlobs/cvBlobsLib/src/BlobResult.cpp
+/home/v.nidamarthy/C++/hand_detection/detectSkinBlobs/cvBlobsLib/src/BlobResult.cpp
 limits.h
 -
 stdio.h
@@ -42,57 +42,57 @@ functional
 algorithm
 -
 BlobResult.h
-/home/varun/c++/detectSkinBlobs/cvBlobsLib/src/BlobResult.h
+/home/v.nidamarthy/C++/hand_detection/detectSkinBlobs/cvBlobsLib/src/BlobResult.h
 afx.h
 -
 afxwin.h
 -
 
-/home/varun/c++/detectSkinBlobs/cvBlobsLib/src/BlobResult.h
+/home/v.nidamarthy/C++/hand_detection/detectSkinBlobs/cvBlobsLib/src/BlobResult.h
 BlobLibraryConfiguration.h
-/home/varun/c++/detectSkinBlobs/cvBlobsLib/src/BlobLibraryConfiguration.h
+/home/v.nidamarthy/C++/hand_detection/detectSkinBlobs/cvBlobsLib/src/BlobLibraryConfiguration.h
 math.h
 -
 opencv/cxcore.h
-/home/varun/c++/detectSkinBlobs/cvBlobsLib/src/opencv/cxcore.h
+/home/v.nidamarthy/C++/hand_detection/detectSkinBlobs/cvBlobsLib/src/opencv/cxcore.h
 matrixCV.h
-/home/varun/c++/detectSkinBlobs/cvBlobsLib/src/matrixCV.h
+/home/v.nidamarthy/C++/hand_detection/detectSkinBlobs/cvBlobsLib/src/matrixCV.h
 vector
-/home/varun/c++/detectSkinBlobs/cvBlobsLib/src/vector
+/home/v.nidamarthy/C++/hand_detection/detectSkinBlobs/cvBlobsLib/src/vector
 vector
 -
 functional
 -
 blob.h
-/home/varun/c++/detectSkinBlobs/cvBlobsLib/src/blob.h
+/home/v.nidamarthy/C++/hand_detection/detectSkinBlobs/cvBlobsLib/src/blob.h
 BlobOperators.h
-/home/varun/c++/detectSkinBlobs/cvBlobsLib/src/BlobOperators.h
+/home/v.nidamarthy/C++/hand_detection/detectSkinBlobs/cvBlobsLib/src/BlobOperators.h
 ComponentLabeling.h
-/home/varun/c++/detectSkinBlobs/cvBlobsLib/src/ComponentLabeling.h
+/home/v.nidamarthy/C++/hand_detection/detectSkinBlobs/cvBlobsLib/src/ComponentLabeling.h
 
-/home/varun/c++/detectSkinBlobs/cvBlobsLib/src/ComponentLabeling.cpp
+/home/v.nidamarthy/C++/hand_detection/detectSkinBlobs/cvBlobsLib/src/ComponentLabeling.cpp
 ComponentLabeling.h
-/home/varun/c++/detectSkinBlobs/cvBlobsLib/src/ComponentLabeling.h
+/home/v.nidamarthy/C++/hand_detection/detectSkinBlobs/cvBlobsLib/src/ComponentLabeling.h
 
-/home/varun/c++/detectSkinBlobs/cvBlobsLib/src/ComponentLabeling.h
+/home/v.nidamarthy/C++/hand_detection/detectSkinBlobs/cvBlobsLib/src/ComponentLabeling.h
 vector
-/home/varun/c++/detectSkinBlobs/cvBlobsLib/src/vector
+/home/v.nidamarthy/C++/hand_detection/detectSkinBlobs/cvBlobsLib/src/vector
 BlobContour.h
-/home/varun/c++/detectSkinBlobs/cvBlobsLib/src/BlobContour.h
+/home/v.nidamarthy/C++/hand_detection/detectSkinBlobs/cvBlobsLib/src/BlobContour.h
 blob.h
-/home/varun/c++/detectSkinBlobs/cvBlobsLib/src/blob.h
+/home/v.nidamarthy/C++/hand_detection/detectSkinBlobs/cvBlobsLib/src/blob.h
 
-/home/varun/c++/detectSkinBlobs/cvBlobsLib/src/blob.cpp
+/home/v.nidamarthy/C++/hand_detection/detectSkinBlobs/cvBlobsLib/src/blob.cpp
 blob.h
-/home/varun/c++/detectSkinBlobs/cvBlobsLib/src/blob.h
+/home/v.nidamarthy/C++/hand_detection/detectSkinBlobs/cvBlobsLib/src/blob.h
 
-/home/varun/c++/detectSkinBlobs/cvBlobsLib/src/blob.h
+/home/v.nidamarthy/C++/hand_detection/detectSkinBlobs/cvBlobsLib/src/blob.h
 opencv/cxcore.h
-/home/varun/c++/detectSkinBlobs/cvBlobsLib/src/opencv/cxcore.h
+/home/v.nidamarthy/C++/hand_detection/detectSkinBlobs/cvBlobsLib/src/opencv/cxcore.h
 BlobLibraryConfiguration.h
-/home/varun/c++/detectSkinBlobs/cvBlobsLib/src/BlobLibraryConfiguration.h
+/home/v.nidamarthy/C++/hand_detection/detectSkinBlobs/cvBlobsLib/src/BlobLibraryConfiguration.h
 BlobContour.h
-/home/varun/c++/detectSkinBlobs/cvBlobsLib/src/BlobContour.h
+/home/v.nidamarthy/C++/hand_detection/detectSkinBlobs/cvBlobsLib/src/BlobContour.h
 ../inspecta/DesignPatterns/ObjectFactory.h
-/home/varun/c++/detectSkinBlobs/cvBlobsLib/inspecta/DesignPatterns/ObjectFactory.h
+/home/v.nidamarthy/C++/hand_detection/detectSkinBlobs/cvBlobsLib/inspecta/DesignPatterns/ObjectFactory.h
 

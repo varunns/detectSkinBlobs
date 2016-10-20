@@ -1,2 +1,2 @@
-/home/varun/c++/detectSkinBlobs/CMakeFiles/blobslib.dir
-/home/varun/c++/detectSkinBlobs/CMakeFiles/detectskin.dir
+/home/v.nidamarthy/C++/hand_detection/detectSkinBlobs/CMakeFiles/blobslib.dir
+/home/v.nidamarthy/C++/hand_detection/detectSkinBlobs/CMakeFiles/detectskin.dir
