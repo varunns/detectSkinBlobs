@@ -101,12 +101,16 @@ cout << "cannot open camera";
    cout<<element;
  
 
+   int lowThreshold = 50;
+	 int ratio = 3;
+	 int kernal_size = 3;
 
 	while(true)
 	{
 		cv::Mat imageBGR, input;
-		stream1.read(input);
-		GaussianBlur(input, imageBGR, Size(5,5), 0, 0);
+		//stream1.read(input);
+		stream1.read(imageBGR);
+		//GaussianBlur(input, imageBGR, Size(5,5), 0, 0);
 
 		namedWindow("Input Image", CV_WINDOW_AUTOSIZE);
 		imshow("Input Image", imageBGR);
@@ -211,7 +215,7 @@ cout << "cannot open camera";
 		blobs = CBlobResult(imageSkinPixels_ipl, NULL, 0);	// Use a black background color.
 
 		// Ignore the blobs whose area is less than minArea.
-		int minArea = 100;
+		int minArea = 0;
 		blobs.Filter(blobs, B_EXCLUDE, CBlobGetArea(), B_LESS, minArea);
 
 		// Show the large blobs.
@@ -222,15 +226,21 @@ cout << "cannot open camera";
 		}
 			cv::Mat morph_skin;
 			//cv::Mat mat_skin = cv::cvarrToMat(imageSkinPixels);
-	    imshow("Skin Blobs", imageSkinPixels);
+	    imshow("Skin Blobs", cv::cvarrToMat(imageSkinBlobs) );
 	    //morphologyEx( mat_skin, morph_skin, 3, element);   
-	    morphologyEx( imageSkinPixels, morph_skin, 3, element);   
+	   // morphologyEx( imageSkinPixels, morph_skin, 3, element);   
    		//namedWindow("morph", CV_WINDOW_AUTOSIZE);
-   		imshow("morph", morph_skin);
-   		cv::Mat contour_image ;
+   	//	imshow("morph", morph_skin);
+	    morph_skin = imageSkinPixels;
+   		
+  		cv::Mat canny_blob_image;
+			Canny(morph_skin, canny_blob_image, lowThreshold, lowThreshold*ratio, kernal_size);
+			imshow("Canny", canny_blob_image);
+			cv::Mat contour_image ;
    		cvtColor(morph_skin, contour_image, CV_GRAY2BGR);
    		vector<vector<Point> > contours;
    		vector<Vec4i> hierarchy;
+
    		findContours(morph_skin, contours, hierarchy, CV_RETR_TREE, CV_CHAIN_APPROX_SIMPLE, Point(0,0));
    		int max = -100;
    		vector<std::vector<Point> > max_contour;
@@ -258,10 +268,25 @@ cout << "cannot open camera";
 	     }
 
 	     std::vector<Point> hull;
-		   convexHull(max_contour[0], hull, false,true );
+	     std::vector<int> hull_num;
+		   convexHull(max_contour[0], hull, false,true );	
+		   convexHull(max_contour[0], hull_num, false, true);
+		   vector<cv::Vec4i> hull_defects;
+
+		  if(hull.size() > 2)
+		  {
+				convexityDefects(max_contour[0], hull_num, hull_defects);	
+				std::cout<<hull_defects.size()<<endl;
+				for(int i = 0; i < hull_defects.size(); ++i)
+				{
+				//                    circle(imageBGR, cv::Point(hull_defects[i][0], hull_defects[i][1]), 50, cv::Scalar(0,255,0), 1, 8, 0);
+				}
+		  }
+		   
 		 	 const Point *pts = (const cv::Point*) Mat(hull).data;
 		 	 int npts = hull.size();
 		 	 polylines(imageBGR, &pts, &npts, 1, true, Scalar(0,0,255));
+
 
 	     namedWindow("contour image", CV_WINDOW_AUTOSIZE);
 	     imshow("contour image", imageBGR);
